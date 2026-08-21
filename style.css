@@ -114,9 +114,9 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0.8rem 0;
+  padding: 1.5rem 0;
   z-index: 100;
-  transition: var(--transition-smooth);
+  transition: all 0.3s ease;
   background: transparent;
 }
 
@@ -160,9 +160,13 @@ body {
 }
 
 .logo-img {
-  height: 45px;
+  height: 85px;
   width: auto;
-  transition: var(--transition-smooth);
+  transition: height 0.3s ease, transform 0.3s ease;
+}
+
+.navbar.scrolled .logo-img {
+  height: 45px;
 }
 
 .logo-img:hover {
